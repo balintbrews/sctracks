@@ -1,5 +1,7 @@
 # CloudGram
 
+Command-line tool for retrieving titles and URIs of [SoundCloud](http://soundcloud.com) users' uploaded tracks.
+
 ## Requirements
 * Installed Node.js.
 
