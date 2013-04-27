@@ -2,6 +2,8 @@
 
 Command-line tool for retrieving titles and URIs of [SoundCloud](http://soundcloud.com) users' uploaded tracks.
 
+URIs can be copied over to a browser, stream URIs can be passed e.g. to [mplayer](http://mplayerhq.hu) in the command-line.
+
 ## Requirements
 * Installed Node.js.
 
