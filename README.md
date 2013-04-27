@@ -1,4 +1,4 @@
-# CloudGram
+# SCTracks
 
 Command-line tool for retrieving titles and URIs of [SoundCloud](http://soundcloud.com) users' uploaded tracks.
 
@@ -8,14 +8,14 @@ URIs can be copied over to a browser, stream URIs can be passed e.g. to [mplayer
 * Installed Node.js.
 
 ## Usage
-`$ node cloudgram.js [SoundCloud username]`
+`$ node sctracks.js [SoundCloud username]`
 
 ## Development status
 The development is in *experimental status*. Also, these are my first lines of Node.js code I have ever written, so please be gentle. ;)
 
 ## Examples
 
-`$ node cloudgram.js arminvanbuuren`
+`$ node sctracks.js arminvanbuuren`
     
     ==> 2013/04/11 | "Armin van Buuren - Intense (feat. Miri Ben-Ari) [Preview]"
     ... URI: http://soundcloud.com/arminvanbuuren/armin-van-buuren-intense-feat
@@ -40,7 +40,7 @@ The development is in *experimental status*. Also, these are my first lines of N
     [...]
 
 
-`$ node cloudgram.js arminvanbuuren | grep -A2 "Trevor" | less`
+`$ node sctracks.js arminvanbuuren | grep -A2 "Trevor" | less`
 
     ==> 2013/04/04 | "Armin van Buuren feat. Trevor Guthrie - This Is What It Feels Like (W&W Remix) Live@ASOT600,New York"
     ... URI: http://soundcloud.com/arminvanbuuren/avbthiswwnyc
