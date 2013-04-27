@@ -11,25 +11,39 @@ Command-line tool for retrieving titles and URIs of [SoundCloud](http://soundclo
 ## Development status
 The development is in *experimental status*. Also, these are my first lines of Node.js code I have ever written, so please be gentle. ;)
 
-## Example
+## Examples
 
-    $ node cloudgram.js arminvanbuuren
+`$ node cloudgram.js arminvanbuuren`
+    
+    ==> 2013/04/11 | "Armin van Buuren - Intense (feat. Miri Ben-Ari) [Preview]"
+    ... URI: http://soundcloud.com/arminvanbuuren/armin-van-buuren-intense-feat
+    ... Stream URI: http://api.soundcloud.com/tracks/87389350/stream?client_id=e59d1966f5f19e4c3177aef214ed2b19
+    
+    ==> 2013/04/09 | "Armin van Buuren - Who's Afraid Of 138?! [Live From ASOT600 Den Bosch]"
+    ... URI: http://soundcloud.com/arminvanbuuren/armin-van-buuren-whos-afraid
+    ... Stream URI: http://api.soundcloud.com/tracks/87073782/stream?client_id=e59d1966f5f19e4c3177aef214ed2b19
+    
+    ==> 2013/04/04 | "Armin van Buuren feat. Trevor Guthrie - This Is What It Feels Like (W&W Remix) Live@ASOT600,New York"
+    ... URI: http://soundcloud.com/arminvanbuuren/avbthiswwnyc
+    ... Stream URI: http://api.soundcloud.com/tracks/86331645/stream?client_id=e59d1966f5f19e4c3177aef214ed2b19
     
     ==> 2013/03/19 | "Armin van Buuren feat. Trevor Guthrie - This Is What It Feels Like (G.O. Remix) Live@ASOT600, Beirut"
-    http://soundcloud.com/arminvanbuuren/armin-van-buuren-feat-trevor
-
+    ... URI: http://soundcloud.com/arminvanbuuren/armin-van-buuren-feat-trevor
+    ... Stream URI: http://api.soundcloud.com/tracks/83943994/stream?client_id=e59d1966f5f19e4c3177aef214ed2b19
+    
     ==> 2013/02/06 | "Armin van Buuren presents Gaia – Humming The Lights"
-    http://soundcloud.com/arminvanbuuren/armin-van-buuren-presents-gaia
+    ... URI: http://soundcloud.com/arminvanbuuren/armin-van-buuren-presents-gaia
+    ... Stream URI: http://api.soundcloud.com/tracks/78089661/stream?client_id=e59d1966f5f19e4c3177aef214ed2b19
+    
+    [...]
 
-    ==> 2013/02/01 | "Armin van Buuren & W&W - D# Fat"
-    http://soundcloud.com/arminvanbuuren/armin-van-buuren-w-w-d-fat
 
-    ==> 2013/01/30 | "Armin van Buuren vs Arty - Nehalennia (Sneak preview)"
-    http://soundcloud.com/arminvanbuuren/armin-van-buuren-vs-arty
+`$ node cloudgram.js arminvanbuuren | grep -A2 "Trevor" | less`
 
-    ==> 2013/01/14 | "Armin van Buuren feat. Fiora - Waiting For The Night [Pluck]"
-    http://soundcloud.com/arminvanbuuren/arminfiorapluck
-
-    ==> 2013/01/11 | "Armin van Buuren & Markus Schulz - The Expedition (ASOT600 Anthem)"
-    http://soundcloud.com/arminvanbuuren/asot600
-
+    ==> 2013/04/04 | "Armin van Buuren feat. Trevor Guthrie - This Is What It Feels Like (W&W Remix) Live@ASOT600,New York"
+    ... URI: http://soundcloud.com/arminvanbuuren/avbthiswwnyc
+    ... Stream URI: http://api.soundcloud.com/tracks/86331645/stream?client_id=e59d1966f5f19e4c3177aef214ed2b19
+    --
+    ==> 2013/03/19 | "Armin van Buuren feat. Trevor Guthrie - This Is What It Feels Like (G.O. Remix) Live@ASOT600, Beirut"
+    ... URI: http://soundcloud.com/arminvanbuuren/armin-van-buuren-feat-trevor
+    ... Stream URI: http://api.soundcloud.com/tracks/83943994/stream?client_id=e59d1966f5f19e4c3177aef214ed2b19
