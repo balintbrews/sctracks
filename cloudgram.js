@@ -44,7 +44,8 @@ http.get(resolveRequestOptions, function(resolveResponse) {
         var parsedBody = JSON.parse(usersResponseBody);
         parsedBody.forEach(function (item) {
           console.log('==> ' + item.created_at.substr(0, 10) + ' | "' + item.title + '"');
-          console.log(item.permalink_url + '\n');
+          console.log('... URI: ' + item.permalink_url);
+          console.log('... Stream URI: ' + item.stream_url + '?client_id=' + clientId + '\n');
         });
       });
     }).on('error', httpRequestErrorCallback);
